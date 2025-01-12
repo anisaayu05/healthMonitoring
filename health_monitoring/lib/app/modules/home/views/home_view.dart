@@ -46,6 +46,14 @@ class _HomeViewState extends State<HomeView> {
               child: Icon(Icons.person, color: Colors.blue),
             ),
           ),
+          title: Row(
+            children: [
+              Text(
+                "Users", 
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+              ),
+            ],
+          ),
           actions: [
             // Ganti ikon notifikasi dengan ikon pengaturan
             IconButton(

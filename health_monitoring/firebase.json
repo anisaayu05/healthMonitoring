@@ -1,1 +1,41 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"healthmonitoring-90af9","appId":"1:555705912730:android:1d32bf28e1c4371fbffe23","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"healthmonitoring-90af9","configurations":{"android":"1:555705912730:android:1d32bf28e1c4371fbffe23","ios":"1:555705912730:ios:f5c0a0d2b096de63bffe23","macos":"1:555705912730:ios:f5c0a0d2b096de63bffe23","web":"1:555705912730:web:6d0584e39b013ddabffe23","windows":"1:555705912730:web:9cf1f79a5379bc5dbffe23"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "healthmonitoring-90af9",
+          "appId": "1:555705912730:android:1d32bf28e1c4371fbffe23",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "healthmonitoring-90af9",
+          "configurations": {
+            "android": "1:555705912730:android:1d32bf28e1c4371fbffe23",
+            "ios": "1:555705912730:ios:f5c0a0d2b096de63bffe23",
+            "macos": "1:555705912730:ios:f5c0a0d2b096de63bffe23",
+            "web": "1:555705912730:web:6d0584e39b013ddabffe23",
+            "windows": "1:555705912730:web:9cf1f79a5379bc5dbffe23"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
